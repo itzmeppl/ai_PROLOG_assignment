@@ -1,0 +1,57 @@
+% Enter the names of your group members below.
+% If you only have 2 group members, leave the last space blank
+%
+%%%%%
+%%%%% NAME: 
+%%%%% NAME:
+%%%%% NAME:
+%
+% Add your queries below.For example, if you want to add the query "pred(X, constant).", 
+% it should appear as follows:
+% 
+% %%%%% QUERY 2: Retrieves the block that is on top of blockA
+% on(X, blockA).
+%
+% where 2 is the number of the query. Omit the "%" on the line with the query below.
+% Don't forget to end queries with a period.
+%
+% Each query below is labelled with an English description of what should be queried for.
+
+%%%%%% QUERY 1: Did the record label Republic release an album called “Midnights”?
+
+
+%%%%%% QUERY 2: Who was the artist that released the album “Renaissance”?
+
+
+%%%%%% QUERY 3: Was there an artist who released albums in both 2010 and 2016, and if so, who was it?
+
+
+%%%%%% QUERY 4: Was there an album that was released in the year 2012 that was not released by either the record label Columbia or the record label Republic?
+
+
+%%%%%% QUERY 5: Did any artist release two different albums, each with a different record label?
+
+
+%%%%%% QUERY 6: Did any artist release more than one album with the same record label?
+
+
+%%%%%% QUERY 7: Did the artist who released an album called “30” release any albums in years before that one?
+
+
+%%%%%% QUERY 8: Was there a year from 2000 to 2023 (inclusive) that the record label Republic did not release an album?
+
+
+%%%%%% QUERY 9: Was there an artist that released an album in 3 consecutive years starting in 2018 or later?
+
+
+%%%%%% QUERY 10: Did any record label release exactly one album in 2015?
+
+
+%%%%%% QUERY 11: What was the last album released by Drake?
+
+
+%%%
+%%%
+%%%
+%%%%% INTERACTION
+
