@@ -27,6 +27,7 @@ albumArtist(omnibus, twrp).
 albumArtist(inside, bo_burnham).
 albumArtist(cool_patrol, nsp). 
 albumArtist(not_dead, norm_elmahn).
+albumArtist(reputation,taylor_swift).
 
 
 %%%%% SECTION: albumLabel
@@ -37,12 +38,14 @@ albumLabel(omnibus, meow_wolf).
 albumLabel(inside, imperial_records).
 albumLabel(cool_patrol, dan_avidan).
 albumLabel(not_dead, hpd).
+albumLabel(reputation,big_machine_records).
 
 %%%%% SECTION: albumYear
-releaseYear(thank_u_next, 2019).
-releaseYear(free_spirit, 2019).
-releaseYear(shawn_mendes, 2018).
-releaseYear(omnibus, 2018).
-releaseYear(inside, 2021).
-releaseYear(cool_patrol,2017).
-releaseYear(not_dead, 2000).
+albumYear(thank_u_next, 2019).
+albumYear(free_spirit, 2019).
+albumYear(shawn_mendes, 2018).
+albumYear(omnibus, 2018).
+albumYear(inside, 2021).
+albumYear(cool_patrol,2017).
+albumYear(not_dead, 2000).
+albumYear(reputation,2017).
