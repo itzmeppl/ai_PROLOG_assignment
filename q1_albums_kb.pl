@@ -24,8 +24,8 @@ albumArtist(thank_u_next, ariana_grande).
 albumArtist(free_spirit, khalid).
 albumArtist(shawn_mendes, shawn_mendes).
 albumArtist(omnibus, twrp).
-albumArtist(inside, bo_burnham)
-albumArtist(cool_patrol, nsp) 
+albumArtist(inside, bo_burnham).
+albumArtist(cool_patrol, nsp). 
 
 
 %%%%% SECTION: albumLabel
