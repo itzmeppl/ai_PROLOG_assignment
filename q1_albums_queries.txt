@@ -19,9 +19,11 @@
 
 %%%%%% QUERY 1: Did the record label Republic release an album called “Midnights”?
 
+albumLabel(republic,midnights).
 
 %%%%%% QUERY 2: Who was the artist that released the album “Renaissance”?
 
+albumArtist(X,renaissance).
 
 %%%%%% QUERY 3: Was there an artist who released albums in both 2010 and 2016, and if so, who was it?
 
