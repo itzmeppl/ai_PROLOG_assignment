@@ -19,16 +19,19 @@
 
 %%%%%% QUERY 1: Did the record label Republic release an album called “Midnights”?
 
-albumLabel(republic,midnights).
+albumLabel(midnights,republic).
 
 %%%%%% QUERY 2: Who was the artist that released the album “Renaissance”?
 
-albumArtist(X,renaissance).
+albumArtist(renaissance,X).
 
 %%%%%% QUERY 3: Was there an artist who released albums in both 2010 and 2016, and if so, who was it?
 
+%i'm thinking A= album name and B=artist name
+albumArtist(A,B), releaseYear(A,2010), releaseYear(A,2016).
 
 %%%%%% QUERY 4: Was there an album that was released in the year 2012 that was not released by either the record label Columbia or the record label Republic?
+
 
 
 %%%%%% QUERY 5: Did any artist release two different albums, each with a different record label?
