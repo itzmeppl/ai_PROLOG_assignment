@@ -23,18 +23,24 @@ year(2020). year(2021). year(2022). year(2023).
 albumArtist(thank_u_next, ariana_grande).
 albumArtist(free_spirit, khalid).
 albumArtist(shawn_mendes, shawn_mendes).
-
-
+albumArtist(omnibus, twrp).
+albumArtist(inside, bo_burnham)
+albumArtist(cool_patrol, nsp) 
 
 
 %%%%% SECTION: albumLabel
 albumLabel(thank_u_next, island_republic).
 albumLabel(free_spirit, rca).
 albumLabel(shawn_mendes, island).
-
+albumLabel(omnibus, meow_wolf).
+albumLabel(inside, imperial_records).
+albumLabel(cool_patrol, dan_avidan).
 
 
 %%%%% SECTION: albumYear
 releaseYear(thank_u_next, 2019).
 releaseYear(free_spirit, 2019).
 releaseYear(shawn_mendes, 2018).
+releaseYear(omnibus, 2018).
+releaseYear(inside, 2021).
+releaseYear(cool_patrol,2017).
