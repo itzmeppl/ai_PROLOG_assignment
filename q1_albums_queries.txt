@@ -50,7 +50,6 @@ albumArtist(A,B),albumArtist(C,D), albumLabel(A,M),albumLabel(C,P) not A=C, B=D,
 
 
 
-
 %%%%%% QUERY 8: Was there a year from 2000 to 2023 (inclusive) that the record label Republic did not release an album?
 
 
