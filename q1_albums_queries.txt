@@ -61,9 +61,6 @@ albumArtist(30,ARTISTNAME),albumArtist(A,ARTISTNAME),albumYear(A,X), albumYear(3
 
 %can find if republic did release an album then negate it
 
-%PLEASE CHECK
-not(albumLabel(A,republic), albumYear(A,Y), Y>=2000,Y=<2023.).
-
 %Riddhima's answer
 albumLabel(X, republic), albumYear(X, Y), not (Y =< 2023), not (Y >= 2000).
 
