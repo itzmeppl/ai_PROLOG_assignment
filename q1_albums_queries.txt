@@ -47,6 +47,7 @@ albumArtist(M,S), albumArtist(N,S), albumLabel(M,L),albumLabel(N,R), not M=N, S=
 %%%%%% QUERY 6: Did any artist release more than one album with the same record label?
 
 %more than one means at least 2
+%both work
 
 albumArtist(A,B),albumArtist(C,D), albumLabel(A,M),albumLabel(C,P),not A=C, B=D,M=P.
 
