@@ -51,6 +51,8 @@ freeRegularShippingMin(90).
 
 %%%%% SECTION: subtotal
 % Put your rules for the subtotal predicate in this section
+subTotal(Sub) :-  cost(laptop,lapCost),numPurchased(laptop,lapCount),lapTotal is lapCost * lapCount,
+cost(monitor,monCost), numPurchased(monitor,monCount), monTotal is monCost * monCount.
 
 
 
