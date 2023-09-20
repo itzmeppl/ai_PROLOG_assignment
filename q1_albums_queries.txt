@@ -58,7 +58,7 @@ albumArtist(30,ARTISTNAME),albumArtist(A,ARTISTNAME),albumYear(A,X), albumYear(3
 %%%%%% QUERY 9: Was there an artist that released an album in 3 consecutive years starting in 2018 or later?
 
 
-
+albumArtist(A,N),albumArtist(B,N),albumArtist(C,N),albumYear(A,P),albumYear(B,Q),albumYear(C,R),Q is P+1, R is P+2.
 
 %%%%%% QUERY 10: Did any record label release exactly one album in 2015?
 
