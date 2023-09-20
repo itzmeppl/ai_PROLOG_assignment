@@ -53,7 +53,10 @@ albumArtist(30,ARTISTNAME),albumArtist(A,ARTISTNAME),albumYear(A,X), albumYear(3
 
 %%%%%% QUERY 8: Was there a year from 2000 to 2023 (inclusive) that the record label Republic did not release an album?
 
+%can find if republic did release an album then negate it
 
+%PLEASE CHECK
+not(albumLabel(A,republic), albumYear(A,Y), Y>2000,Y<2023.).
 
 
 %%%%%% QUERY 9: Was there an artist that released an album in 3 consecutive years starting in 2018 or later?
