@@ -58,6 +58,8 @@ albumArtist(30,ARTISTNAME),albumArtist(A,ARTISTNAME),albumYear(A,X), albumYear(3
 %PLEASE CHECK
 not(albumLabel(A,republic), albumYear(A,Y), Y>=2000,Y=<2023.).
 
+%Riddhima's answer
+albumLabel(X, republic), albumYear(X, Y), not (Y =< 2023), not (Y >= 2000).
 
 %%%%%% QUERY 9: Was there an artist that released an album in 3 consecutive years starting in 2018 or later?
 
