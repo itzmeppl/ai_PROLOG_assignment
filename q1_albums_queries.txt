@@ -48,7 +48,7 @@ albumArtist(A,B),albumArtist(C,D), albumLabel(A,M),albumLabel(C,P) not A=C, B=D,
 
 %%%%%% QUERY 7: Did the artist who released an album called “30” release any albums in years before that one?
 
-albumArtist("30",ARTISTNAME),albumArtist(A,ARTISTNAME),albumYear(A,X), albumYear("30",Y),X<Y.
+albumArtist(30,ARTISTNAME),albumArtist(A,ARTISTNAME),albumYear(A,X), albumYear(30,Y),X<Y.
 
 %%%%%% QUERY 8: Was there a year from 2000 to 2023 (inclusive) that the record label Republic did not release an album?
 
