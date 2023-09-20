@@ -59,7 +59,7 @@ albumArtist(30,ARTISTNAME),albumArtist(A,ARTISTNAME),albumYear(A,X), albumYear(3
 
 %%%%%% QUERY 8: Was there a year from 2000 to 2023 (inclusive) that the record label Republic did not release an album?
 
-%can find if republic did release an album then negate it
+%i'm thinking we do not need the not because the question is asking if republic did not release an album.
 
 %Riddhima's answer
 albumLabel(X, republic), albumYear(X, Y), not (Y =< 2023), not (Y >= 2000).
