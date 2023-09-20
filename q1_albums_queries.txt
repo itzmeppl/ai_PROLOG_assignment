@@ -48,7 +48,7 @@ albumArtist(M,S), albumArtist(N,S), albumLabel(M,L),albumLabel(N,R), not M=N, S=
 
 %more than one means at least 2
 
-albumArtist(A,B),albumArtist(C,D), albumLabel(A,M),albumLabel(C,P) not A=C, B=D,M=P
+albumArtist(A,B),albumArtist(C,D), albumLabel(A,M),albumLabel(C,P),not A=C, B=D,M=P.
 
 albumArtist(X,A), albumArtist(Y,A), albumLabel(X,S), albumLabel(Y,S), not X=Y.
 
