@@ -19,6 +19,7 @@ articleAuthor(communist_manifesto,karl_marx).
 articleAuthor(very_hungry_catipillar,eric_carle).
 articleAuthor(jane_eyre,charlotte_bronte).
 articleAuthor(villette,charlotte_bronte).
+articleAuthor(the_road,cormac_mccarthy).
 articleAuthor(matilda,roald_dahl).
 articleAuthor(the_bfg,roald_dahl).
 articleAuthor(two_treatises_of_government,john_locke).
@@ -36,16 +37,16 @@ articleTopic(communist_manifesto,philosophy).
 articleTopic(very_hungry_catipillar,fiction).
 articleTopic(jane_eyre,fiction).
 articleTopic(villette,fiction).
-articleAuthor(the_road,post_acopalyptic).
-articleAuthor(matilda,fiction).
-articleAuthor(the_bfg,fiction).
-articleAuthor(two_treatises_of_government,politics).
-articleAuthor(ninety_five_theses,theology).
-articleAuthor(the_social_contract,politics).
-articleAuthor(discourse_on_inequality,politics).
-articleAuthor(holes,fiction).
-articleAuthor(the_birchbark_house,fiction).
-articleAuthor(animal_farm,satire).
+articleTopic(the_road,post_acopalyptic).
+articleTopic(matilda,fiction).
+articleTopic(the_bfg,fiction).
+articleTopic(two_treatises_of_government,politics).
+articleTopic(ninety_five_theses,theology).
+articleTopic(the_social_contract,politics).
+articleTopic(discourse_on_inequality,politics).
+articleTopic(holes,fiction).
+articleTopic(the_birchbark_house,fiction).
+articleTopic(animal_farm,satire).
 
 
 
