@@ -46,6 +46,7 @@ albumArtist(M,S), albumArtist(N,S), albumLabel(M,L),albumLabel(N,R) not M=N, S=S
 
 albumArtist(A,B),albumArtist(C,D), albumLabel(A,M),albumLabel(C,P) not A=C, B=D,M=P
 
+albumArtist(X,A), albumArtist(Y,A), albumLabel(X,S), albumLabel(Y,S), not X=Y.
 
 %%%%%% QUERY 7: Did the artist who released an album called “30” release any albums in years before that one?
 
