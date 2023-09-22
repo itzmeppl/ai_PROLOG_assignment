@@ -51,7 +51,7 @@ freeRegularShippingMin(90).
 
 %%%%% SECTION: subtotal
 % Put your rules for the subtotal predicate in this section
-subTotal(Sub) :-  cost(laptop,Lapcost),numPurchased(laptop,Lapcount),Laptotal is Lapcost * Lapcount,
+subtotal(Sub) :-  cost(laptop,Lapcost),numPurchased(laptop,Lapcount),Laptotal is Lapcost * Lapcount,
 cost(monitor,Moncost), numPurchased(monitor,Moncount), Montotal is Moncost * Moncount,
 cost(keyboard,Keybrcost), numPurchased(keyboard,Keybrcount), Keybrtotal is Keybrcost * Keybrcount,
 Sub is Laptotal + Montotal +  Keybrtotal.
@@ -68,16 +68,15 @@ ShippingCost is Lapshiptotal + Monshiptotal +  Keybrhshiptotal.
 
 %%%%% SECTION: calculateShipping
 % Put your rules for the calculateShipping predicate in this section
-calculateShipping(ShippingType,ShippingCost) :- ShippingType = 'express', subTotal(Sub),calculateBaseShipping(Baseship), SubwithShip is Sub + Baseship, freeExpressShippingMin(Freeexpress), SubwithShip >= Freeexpress, shippingCost is 0.
-calculateShipping(ShippingType,ShippingCost) :- ShippingType = 'express', subTotal(Sub),calculateBaseShipping(Baseship), SubwithShip is Sub + Baseship, freeExpressShippingMin(Freeexpress), SubwithShip < Freeexpress, shippingCost is Baseship.
-calculateShipping(ShippingType,ShippingCost) :- ShippingType = 'regular', subTotal(Sub),calculateBaseShipping(Baseship), SubwithShip is Sub + Baseship, freeRegularShippingMin(Freereg), SubwithShip >= Freereg, shippingCost is 0.
-calculateShipping(ShippingType,ShippingCost) :- ShippingType = 'regular', subTotal(Sub),calculateBaseShipping(Baseship), SubwithShip is Sub + Baseship, freeRegularShippingMin(Freereg), SubwithShip < Freereg, shippingCost is Baseship.
-
-
+calculateShipping(ShippingType,ShippingCost) :- ShippingType = 'express', subtotal(Sub),calculateBaseShipping(Baseship), SubwithShip is Sub + Baseship, freeExpressShippingMin(Freeexpress), SubwithShip >= Freeexpress, shippingCost is 0.
+calculateShipping(ShippingType,ShippingCost) :- ShippingType = 'express', subtotal(Sub),calculateBaseShipping(Baseship), SubwithShip is Sub + Baseship, freeExpressShippingMin(Freeexpress), SubwithShip < Freeexpress, shippingCost is Baseship.
+calculateShipping(ShippingType,ShippingCost) :- ShippingType = 'regular', subtotal(Sub),calculateBaseShipping(Baseship), SubwithShip is Sub + Baseship, freeRegularShippingMin(Freereg), SubwithShip >= Freereg, shippingCost is 0.
+calculateShipping(ShippingType,ShippingCost) :- ShippingType = 'regular', subtotal(Sub),calculateBaseShipping(Baseship), SubwithShip is Sub + Baseship, freeRegularShippingMin(Freereg), SubwithShip < Freereg, shippingCost is Baseship.
 
 
 
 %%%%% SECTION: totalCost
 % Put your rules for the totalCost predicate in this section
 
+totalCost(ShippingType,Cost) :- subtotal(Sub), calculateShipping(ShippingType,ShippingCost), SubwithShip is Sub + ShippingCost,taxRate(taxpercent),Taxcal is taxpercent+ 1, Cost is SubwithShip * Taxcal.
 
