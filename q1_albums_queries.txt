@@ -58,10 +58,13 @@ albumArtist(X,A), albumArtist(Y,A), albumLabel(X,S), albumLabel(Y,S), not X=Y.
 albumArtist(30,ARTISTNAME),albumArtist(A,ARTISTNAME),albumYear(A,X), albumYear(30,Y),not A=30, X<Y.
 
 %%%%%% QUERY 8: Was there a year from 2000 to 2023 (inclusive) that the record label Republic did not release an album?
+% albumLabel(X, republic),albumYear(X, Y), Y =<2002,Y>= 2000   this will find any album released by republic between the years 2000 and 2023...
 
 
 %Riddhima's answer
 albumLabel(X, republic), albumYear(X, Y), not (Y =< 2023), not (Y >= 2000).
+
+not (albumLabel(X, republic), albumYear(X, Y), not (Y =< 2023), not (Y >= 2000))
 
 %%%%%% QUERY 9: Was there an artist that released an album in 3 consecutive years starting in 2018 or later?
 
