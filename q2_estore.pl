@@ -15,24 +15,24 @@
 %%%%% SECTION: cost
 % Put your atomic statements for the cost in this section
 
-cost(laptop,C).
-cost(monitor,C).
+cost(laptop,A).
+cost(monitor,B).
 cost(keyboard,C).
 
 %%%%% SECTION: numPurchased
 % Put your atomic statements for the numPurchased predicate in this section
 
-numPurchased(laptop,X).
-numPurchased(monitor,X).
-numPurchased(keyboard,X).
+numPurchased(laptop,D).
+numPurchased(monitor,E).
+numPurchased(keyboard,F).
 
 %%%%% SECTION: shippingCost
 % Put your atomic statements for the shippingCost predicate in this section
 
 %clarified in the discusison board-should be shippingCost(Product,Cost)
-shippingCost(laptop,X).
-shippingCost(monitor,X).
-shippingCost(keyboard,X).
+shippingCost(laptop,G).
+shippingCost(monitor,H).
+shippingCost(keyboard,I).
 
 %%%% SECTION: taxRate
 % Put your atomic statements for the taxRate predicate in this section
@@ -42,12 +42,12 @@ taxRate(0.13).
 %%%%% SECTION: freeRegularShippingMin
 % Put your atomic statements for the freeRegularShippingMin predicate in this section
 
-freeRegularShippingMin(A).
+freeRegularShippingMin(J).
 
 %%%%% SECTION: freeExpressShippingMin
 % Put your atomic statements for the freeExpressShippingMin predicate in this section
 
- freeExpressShippingMin(A).
+ freeExpressShippingMin(K).
 
 %%%%% SECTION: subtotal
 % Put your rules for the subtotal predicate in this section
