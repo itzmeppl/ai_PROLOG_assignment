@@ -22,7 +22,7 @@ articleAuthor(jane_eyre,charlotte_bronte).
 articleAuthor(villette,charlotte_bronte).
 articleAuthor(the_road,cormac_mccarthy).
 articleAuthor(matilda,george_orwell).
-articleAuthor(matilda,roald_dahl)
+articleAuthor(matilda,roald_dahl).
 articleAuthor(the_bfg,roald_dahl).
 articleAuthor(two_treatises_of_government,john_locke).
 articleAuthor(ninety_five_theses,martin_luther).
