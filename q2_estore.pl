@@ -42,12 +42,12 @@ taxRate(0.13).
 %%%%% SECTION: freeRegularShippingMin
 % Put your atomic statements for the freeRegularShippingMin predicate in this section
 
-freeRegularShippingMin(J).
+freeRegularShippingMin(90).
 
 %%%%% SECTION: freeExpressShippingMin
 % Put your atomic statements for the freeExpressShippingMin predicate in this section
 
- freeExpressShippingMin(K).
+ freeExpressShippingMin(120).
 
 %%%%% SECTION: subtotal
 % Put your rules for the subtotal predicate in this section
