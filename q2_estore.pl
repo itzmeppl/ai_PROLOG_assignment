@@ -15,24 +15,24 @@
 %%%%% SECTION: cost
 % Put your atomic statements for the cost in this section
 
-cost(laptop,A).
-cost(monitor,B).
-cost(keyboard,C).
+cost(laptop,100).
+cost(monitor,1000).
+cost(keyboard,10).
 
 %%%%% SECTION: numPurchased
 % Put your atomic statements for the numPurchased predicate in this section
 
-numPurchased(laptop,D).
-numPurchased(monitor,E).
-numPurchased(keyboard,F).
+numPurchased(laptop,5).
+numPurchased(monitor,10).
+numPurchased(keyboard,15).
 
 %%%%% SECTION: shippingCost
 % Put your atomic statements for the shippingCost predicate in this section
 
 %clarified in the discusison board-should be shippingCost(Product,Cost)
-shippingCost(laptop,G).
-shippingCost(monitor,H).
-shippingCost(keyboard,I).
+shippingCost(laptop,50).
+shippingCost(monitor,100).
+shippingCost(keyboard,10).
 
 %%%% SECTION: taxRate
 % Put your atomic statements for the taxRate predicate in this section
