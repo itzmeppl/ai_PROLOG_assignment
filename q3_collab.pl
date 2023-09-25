@@ -39,16 +39,16 @@ articleAuthor(animal_farm,charlotte_bronte).
 
 articleTopic(communist_manifesto,philosophy).
 articleTopic(very_hungry_catipillar,fiction).
-articleTopic(jane_eyre,fiction,young_adult).
+articleTopic(jane_eyre,fiction).
 articleTopic(villette,fiction).
 articleTopic(the_road,post_acopalyptic).
-articleTopic(matilda,fiction,children).
-articleTopic(the_bfg,fiction,children).
+articleTopic(matilda,fiction).
+articleTopic(the_bfg,fiction).
 articleTopic(two_treatises_of_government,politics).
 articleTopic(ninety_five_theses,theology).
 articleTopic(the_social_contract,politics).
 articleTopic(discourse_on_inequality,politics).
-articleTopic(holes,fiction,young_adult).
+articleTopic(holes,fiction).
 articleTopic(the_birchbark_house,fiction).
 articleTopic(animal_farm,satire).
 
