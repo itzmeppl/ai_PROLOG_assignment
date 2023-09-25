@@ -28,23 +28,23 @@ articleAuthor(the_social_contract,jean_jacques_rousseau).
 articleAuthor(discourse_on_inequality,jean_jacques_rousseau).
 articleAuthor(holes,louis_sachar,cormac_mccarthy).
 articleAuthor(the_birchbark_house,louise_erdrich).
-articleAuthor(animal_farm,george_orwell).
+articleAuthor(animal_farm,george_orwell,charlotte_bronte).
 
 %%%%% SECTION: articleTopic
 % Put your atomic statements for the articleTopic predicate in this section
 
 articleTopic(communist_manifesto,philosophy).
 articleTopic(very_hungry_catipillar,fiction).
-articleTopic(jane_eyre,fiction).
+articleTopic(jane_eyre,fiction,young_adult).
 articleTopic(villette,fiction).
 articleTopic(the_road,post_acopalyptic).
-articleTopic(matilda,fiction).
-articleTopic(the_bfg,fiction).
+articleTopic(matilda,fiction,children).
+articleTopic(the_bfg,fiction,children).
 articleTopic(two_treatises_of_government,politics).
 articleTopic(ninety_five_theses,theology).
 articleTopic(the_social_contract,politics).
 articleTopic(discourse_on_inequality,politics).
-articleTopic(holes,fiction).
+articleTopic(holes,fiction,young_adult).
 articleTopic(the_birchbark_house,fiction).
 articleTopic(animal_farm,satire).
 
