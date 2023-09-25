@@ -15,20 +15,24 @@
 %%%%% SECTION: articleAuthor
 % Put your atomic statements for the articleAuthor predicate in this section
 
-articleAuthor(communist_manifesto,karl_marx,john_locke).
+articleAuthor(communist_manifesto,john_locke).
+articleAuthor(communist_manifesto,karl_marx).
 articleAuthor(very_hungry_catipillar,eric_carle).
 articleAuthor(jane_eyre,charlotte_bronte).
 articleAuthor(villette,charlotte_bronte).
 articleAuthor(the_road,cormac_mccarthy).
-articleAuthor(matilda,roald_dahl,george_orwell).
+articleAuthor(matilda,george_orwell).
+articleAuthor(matilda,roald_dahl)
 articleAuthor(the_bfg,roald_dahl).
 articleAuthor(two_treatises_of_government,john_locke).
-articleAuthor(ninety_five_theses,martin_luther,karl_marx).
+articleAuthor(ninety_five_theses,martin_luther).
+articleAuthor(ninety_five_theses,karl_marx).
 articleAuthor(the_social_contract,jean_jacques_rousseau).
 articleAuthor(discourse_on_inequality,jean_jacques_rousseau).
 articleAuthor(holes,louis_sachar,cormac_mccarthy).
 articleAuthor(the_birchbark_house,louise_erdrich).
-articleAuthor(animal_farm,george_orwell,charlotte_bronte).
+articleAuthor(animal_farm,george_orwell).
+articleAuthor(animal_farm,charlotte_bronte).
 
 %%%%% SECTION: articleTopic
 % Put your atomic statements for the articleTopic predicate in this section
