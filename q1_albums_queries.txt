@@ -58,7 +58,7 @@ albumArtist(X,A), albumArtist(Y,A), albumLabel(X,S), albumLabel(Y,S), not X=Y.
 albumArtist(30,ARTISTNAME),albumArtist(A,ARTISTNAME),albumYear(A,X), albumYear(30,Y),not A=30, X<Y.
 
 %%%%%% QUERY 8: Was there a year from 2000 to 2023 (inclusive) that the record label Republic did not release an album?
-
+%need to work
 
 %Riddhima's answer
 albumLabel(X, republic), albumYear(X, Y), not (Y =< 2023), not (Y >= 2000).
@@ -71,7 +71,7 @@ not (albumLabel(X, republic), albumYear(X, Y), not (Y =< 2023), not (Y >= 2000))
 albumArtist(A,N),albumArtist(B,N),albumArtist(C,N),albumYear(A,P),albumYear(B,Q),albumYear(C,R),Q is P+1, R is P+2.
 
 %%%%%% QUERY 10: Did any record label release exactly one album in 2015?
-
+%need to work
 not (albumLabel(A,R),albumLabel(B,R), albumYear(A,2015), albumYear(B,2015), not A=B )
 
 %%%%%% QUERY 11: What was the last album released by Drake?
