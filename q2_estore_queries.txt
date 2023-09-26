@@ -20,29 +20,59 @@
 
 %%%%%% QUERY 1
 subtotal(X).
+%INTERACTION
+?- subtotal(X).
+X = 3510
+Yes (0.00s cpu)
+
 % EXPLANATION: calculates the subtotal of the products if the cost of laptop is 100, cost of monitor is 1000, cost of keyboard is 10 and the number of laptops purchased is 5, monitors purchased is 3 and keyboards purchased is 1
 
 %%%%%% QUERY 2
 calculateBaseShipping(ShippingCost).
+%INTERACTION
+?- calculateBaseShipping(ShippingCost).
+ShippingCost = 560
+Yes (0.00s cpu)
+
 % EXPLANATION: calculates the base shipping cost of purchasing 5 laptops with shipping at $50 each, 3 monitors with shipping at $100 each and 1 keyboard with shipping at $10 each
 
 
 %%%%%% QUERY 3
 calculateShipping(regular,ShippingCost).
+%INTERACTION
+?- calculateShipping(regular, ShippingCost).
+ShippingCost = 560
+Yes (0.00s cpu)
+
 % EXPLANATION: calculates how much shipping will cost when we choose regular shipping and we do not qualify for free regular shipping
 
 
 %%%%%% QUERY 4
 calculateShipping(express,ShippingCost).
+%Interaction
+?- calculateShipping(express, ShippingCost).
+ShippingCost = 840.0
+Yes (0.00s cpu)
+
 % EXPLANATION: calculates how much shipping will cost if we want the express shipping option and we do not qualify for free express shipping
 
 %%%%%% QUERY 5
 totalCost(regular,Cost).
+%INTERACTION
+?- totalCost(regular, Cost).
+Cost = 4599.0999999999995
+Yes (0.00s cpu)
+
 % EXPLANATION: calculates the total cost of the products including shipping and taxes if we only want the regular shipping option and we do not qualify for free regular shipping
 
 
 %%%%%% QUERY 6
 totalCost(express,Cost).
+%INTERACTION
+?- totalCost(express, Cost).
+Cost = 4915.4999999999991
+Yes (0.00s cpu)
+
 % EXPLANATION: calculates the total cost of the products including shipping and taxes if we want the express shipping option and we do not qualify for free express shipping
 
 
