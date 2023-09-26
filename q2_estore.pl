@@ -69,7 +69,7 @@ ShippingCost is Lapshiptotal + Monshiptotal +  Keybrshiptotal.
 %%%%% SECTION: calculateShipping
 % Put your rules for the calculateShipping predicate in this section
 calculateShipping(ShippingType,ShippingCost) :- ShippingType = express, subtotal(Sub),calculateBaseShipping(Baseship), SubwithShip is Sub + Baseship, freeExpressShippingMin(Freeexpress), SubwithShip >= Freeexpress, ShippingCost is 0.
-calculateShipping(ShippingType,ShippingCost) :- ShippingType = express, subtotal(Sub),calculateBaseShipping(Baseship), SubwithShip is Sub + Baseship, freeExpressShippingMin(Freeexpress), SubwithShip < Freeexpress, ShippingCost is Baseship.
+calculateShipping(ShippingType,ShippingCost) :- ShippingType = express, subtotal(Sub),calculateBaseShipping(Baseship), SubwithShip is Sub + Baseship, freeExpressShippingMin(Freeexpress), SubwithShip < Freeexpress, ShippingCost is Baseship * 1.5.
 calculateShipping(ShippingType,ShippingCost) :- ShippingType = regular, subtotal(Sub),calculateBaseShipping(Baseship), SubwithShip is Sub + Baseship, freeRegularShippingMin(Freereg), SubwithShip >= Freereg, ShippingCost is 0.
 calculateShipping(ShippingType,ShippingCost) :- ShippingType = regular, subtotal(Sub),calculateBaseShipping(Baseship), SubwithShip is Sub + Baseship, freeRegularShippingMin(Freereg), SubwithShip < Freereg, ShippingCost is Baseship.
 
