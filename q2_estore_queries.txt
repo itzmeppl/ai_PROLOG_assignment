@@ -33,7 +33,7 @@ calculateShipping(regular,ShippingCost).
 
 
 %%%%%% QUERY 4
-calculateShipping(regular,ShippingCost).
+calculateShipping(express,ShippingCost).
 % EXPLANATION: calculates how much shipping will cost if we want the express shipping option and we do not qualify for free express shipping
 
 %%%%%% QUERY 5
