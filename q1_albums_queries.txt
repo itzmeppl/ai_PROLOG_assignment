@@ -88,3 +88,57 @@ albumArtist(Lastalbum, drake), albumYear(Lastalbum, TargetYear), not (albumYear(
 %%%
 %%%%% INTERACTION
 
+?- albumLabel(midnights, republic).
+No (0.00s cpu)
+
+?- albumArtist(renaissance, X).
+No (0.00s cpu)
+
+?- albumArtist(A, B), albumArtist(C, D), albumYear(A, 2010), albumYear(C, 2016), B = D, not A = C.
+No (0.00s cpu)
+
+?- albumYear(A, 2012), not albumLabel(A, columbia), not albumLabel(A, republic).
+No (0.00s cpu)
+
+?- albumArtist(M, S), albumArtist(N, S), albumLabel(M, L), albumLabel(N, R), not M = N, S = S, not L = R.
+No (0.00s cpu)
+
+?- albumArtist(A, B), albumArtist(C, D), albumLabel(A, M), albumLabel(C, P), not A = C, B = D, M = P.
+No (0.00s cpu)
+
+?- albumArtist(30, ARTISTNAME), albumArtist(A, ARTISTNAME), albumYear(A, X), albumYear(30, Y), not A = 30, X < Y.
+No (0.00s cpu)
+
+?- albumYear(_71, Year), Year >= 2000, Year =< 2023, albumLabel(_93, republic).
+No (0.00s cpu)
+
+?- albumArtist(A, N), albumArtist(B, N), albumArtist(C, N), albumYear(A, P), albumYear(B, Q), albumYear(C, R), P >= 2018, Q is P + 1, R is P + 2.
+No (0.00s cpu)
+
+?- not (albumLabel(A, R), albumLabel(B, R), albumYear(A, 2015), albumYear(B, Y), Y \= 2015, not A = B), not albumYear(C, 2015).
+A = A
+R = R
+B = B
+Y = Y
+C = C
+Yes (0.00s cpu)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
