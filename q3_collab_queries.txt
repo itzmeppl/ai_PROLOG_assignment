@@ -22,14 +22,15 @@
 % EXPLANATION: Checks if danny wrote at least one paper on the topic of ai.
 collabDistWithAI(danny,danny,0,at_least_one).
 
-%%%%%% QUERY 2
-% EXPLANATION: 
+%%%%%% QUERY 2 
+% EXPLANATION: Checks if there is a path of length at most 4 collaboration steps between sarah and alice.
 
+collabDist(sarah, alice, 4).
 
 %%%%%% QUERY 3
-% EXPLANATION: 
+% EXPLANATION: Check who has a path of length at most 2 collaboration steps with john.
 
-
+collabDist(john,X,2).
 %%%%%% QUERY 4
 % EXPLANATION: 
 
