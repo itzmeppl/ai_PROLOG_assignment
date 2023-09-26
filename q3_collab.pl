@@ -29,7 +29,8 @@ articleAuthor(ninety_five_theses,martin_luther).
 articleAuthor(ninety_five_theses,karl_marx).
 articleAuthor(the_social_contract,jean_jacques_rousseau).
 articleAuthor(discourse_on_inequality,jean_jacques_rousseau).
-articleAuthor(holes,louis_sachar,cormac_mccarthy).
+articleAuthor(holes,louis_sachar).
+articleAuthor(holes,cormac_mccarthy).
 articleAuthor(the_birchbark_house,louise_erdrich).
 articleAuthor(animal_farm,george_orwell).
 articleAuthor(animal_farm,charlotte_bronte).
