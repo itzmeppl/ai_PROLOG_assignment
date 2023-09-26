@@ -74,6 +74,8 @@ albumArtist(A,N),albumArtist(B,N),albumArtist(C,N),albumYear(A,P),albumYear(B,Q)
 %need to work
 not (albumLabel(A,R),albumLabel(B,R), albumYear(A,2015), albumYear(B,2015), not A=B )
 
+albumLabel(A,R),albumLabel(B,R), albumYear(A,2015), albumYear(B,Y), Y != 2015, not A=B.
+
 %%%%%% QUERY 11: What was the last album released by Drake?
 
 
