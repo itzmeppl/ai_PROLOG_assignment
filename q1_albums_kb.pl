@@ -28,6 +28,8 @@ albumArtist(inside, bo_burnham).
 albumArtist(cool_patrol, nsp). 
 albumArtist(not_dead, norm_elmahn).
 albumArtist(reputation,taylor_swift).
+albumArtist(song1,drake).
+albumArtist(song2,drake).
 
 
 %%%%% SECTION: albumLabel
@@ -39,6 +41,8 @@ albumLabel(inside, imperial_records).
 albumLabel(cool_patrol, dan_avidan).
 albumLabel(not_dead, hpd).
 albumLabel(reputation,big_machine_records).
+albumLabel(song1,big_machine_records).
+albumLabel(song2,big_machine_records).
 
 %%%%% SECTION: albumYear
 albumYear(thank_u_next, 2019).
@@ -48,4 +52,6 @@ albumYear(omnibus, 2018).
 albumYear(inside, 2021).
 albumYear(cool_patrol,2017).
 albumYear(not_dead, 2000).
+albumYear(song1, 2000).
+albumYear(song2, 2017).
 albumYear(reputation,2017).
