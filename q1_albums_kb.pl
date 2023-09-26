@@ -30,6 +30,10 @@ albumArtist(not_dead, norm_elmahn).
 albumArtist(reputation,taylor_swift).
 albumArtist(song1,drake).
 albumArtist(song2,drake).
+albumArtist(one,singer).
+albumArtist(two,singer).
+albumArtist(three,singer).
+
 
 
 %%%%% SECTION: albumLabel
@@ -43,6 +47,9 @@ albumLabel(not_dead, hpd).
 albumLabel(reputation,big_machine_records).
 albumLabel(song1,big_machine_records).
 albumLabel(song2,big_machine_records).
+albumLabel(one,bic).
+albumLabel(two,blahblah).
+albumLabel(three,eewfds).
 
 %%%%% SECTION: albumYear
 albumYear(thank_u_next, 2019).
@@ -52,6 +59,10 @@ albumYear(omnibus, 2018).
 albumYear(inside, 2021).
 albumYear(cool_patrol,2017).
 albumYear(not_dead, 2000).
+albumYear(reputation,2017).
 albumYear(song1, 2000).
 albumYear(song2, 2017).
-albumYear(reputation,2017).
+albumYear(one, 2020).
+albumYear(two, 2021).
+albumYear(three, 2022).
+
