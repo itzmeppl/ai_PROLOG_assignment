@@ -65,6 +65,8 @@ albumYear(_, Year), Year >= 2000, Year =< 2023, albumLabel(_, 'republic').
 
 %%%%%% QUERY 9: Was there an artist that released an album in 3 consecutive years starting in 2018 or later?
 
+albumArtist(A1,Artist),albumArtist(A2,Artist),albumArtist(A3,Artist),albumYear(A1,Year1),albumYear(A2,Year2),albumYear(A3,Year3),Year1>=2018, Year2 is Year1+1, Year3 is Year1+2.
+
 
 albumArtist(A,N),albumArtist(B,N),albumArtist(C,N),albumYear(A,P),albumYear(B,Q),albumYear(C,R),P>=2018, Q is P+1, R is P+2.
 
