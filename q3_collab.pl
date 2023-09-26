@@ -17,6 +17,7 @@
 
 articleAuthor(communist_manifesto,john_locke).
 articleAuthor(communist_manifesto,karl_marx).
+articleAuthor(communist_manifesto,cormac_mccarthy).
 articleAuthor(very_hungry_catipillar,eric_carle).
 articleAuthor(jane_eyre,charlotte_bronte).
 articleAuthor(villette,charlotte_bronte).
@@ -49,9 +50,9 @@ articleTopic(two_treatises_of_government,politics).
 articleTopic(ninety_five_theses,theology).
 articleTopic(the_social_contract,politics).
 articleTopic(discourse_on_inequality,politics).
-articleTopic(holes,fiction).
+articleTopic(holes,ai).
 articleTopic(the_birchbark_house,fiction).
-articleTopic(animal_farm,satire).
+articleTopic(animal_farm,ai).
 
 
 
