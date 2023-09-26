@@ -29,19 +29,21 @@ calculateBaseShipping(ShippingCost).
 
 %%%%%% QUERY 3
 calculateShipping(regular,ShippingCost).
-% EXPLANATION: calculates how much shipping will cost when we choose regular shipping if we do not qualify for free shipping. if we qualify for free shipping the shipping cost is 0
+% EXPLANATION: calculates how much shipping will cost when we choose regular shipping
 
 
 %%%%%% QUERY 4
-totalCost(express,Cost).
-% EXPLANATION: calculates the total cost of the products including express shipping and taxes
+calculateShipping(regular,ShippingCost).
+% EXPLANATION: calculates how much shipping will cost if we want the express shipping option
 
 %%%%%% QUERY 5
-% EXPLANATION: 
+totalCost(regular,Cost).
+% EXPLANATION: calculates the total cost of the products including shipping and taxes if we want the express shipping option
 
 
 %%%%%% QUERY 6
-% EXPLANATION: 
+totalCost(express,Cost).
+% EXPLANATION: calculates the total cost of the products including shipping and taxes if we only want the regular shipping option
 
 
 % If you want to add more queries, put them above and use the same formatting as given above.
