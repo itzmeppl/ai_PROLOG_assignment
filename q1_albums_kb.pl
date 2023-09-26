@@ -47,7 +47,7 @@ albumLabel(song2,big_machine_records).
 %%%%% SECTION: albumYear
 albumYear(thank_u_next, 2019).
 albumYear(free_spirit, 2019).
-albumYear(shawn_mendes, 2018).
+albumYear(shawn_mendes, 2012).
 albumYear(omnibus, 2018).
 albumYear(inside, 2021).
 albumYear(cool_patrol,2017).
