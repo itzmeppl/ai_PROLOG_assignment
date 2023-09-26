@@ -20,11 +20,11 @@
 
 %%%%%% QUERY 1
 subtotal(X).
-% EXPLANATION: calculates the subtotal of the products if the cost of laptop is 100, cost of monitor is 1000, cost of keyboard is 10 and the number of laptops purchased is 5, monitors purchased is 10 and keyboards purchased is 15.
+% EXPLANATION: calculates the subtotal of the products if the cost of laptop is 100, cost of monitor is 1000, cost of keyboard is 10 and the number of laptops purchased is 5, monitors purchased is 3 and keyboards purchased is 15.
 
 %%%%%% QUERY 2
 calculateBaseShipping(ShippingCost).
-% EXPLANATION: calculates the base shipping cost of purchasing 5 laptops with shipping at $50 each, 10 monitors with shipping at $100 each and 15 keyboards with shipping at $10 each
+% EXPLANATION: calculates the base shipping cost of purchasing 5 laptops with shipping at $50 each, 3 monitors with shipping at $100 each and 15 keyboards with shipping at $10 each
 
 
 %%%%%% QUERY 3
