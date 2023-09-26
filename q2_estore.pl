@@ -64,7 +64,7 @@ Sub is Laptotal + Montotal +  Keybrtotal.
 calculateBaseShipping(ShippingCost) :- shippingCost(laptop,Lapship),numPurchased(laptop,Lapcount),Lapshiptotal is Lapship * Lapcount,
 shippingCost(monitor,Monship), numPurchased(monitor,Moncount), Monshiptotal is Moncount * Monship,
 shippingCost(keyboard,Keybrship), numPurchased(keyboard,Keybrcount), Keybrshiptotal is Keybrship * Keybrcount,
-ShippingCost is Lapshiptotal + Monshiptotal +  Keybrhshiptotal.  
+ShippingCost is Lapshiptotal + Monshiptotal +  Keybrshiptotal.  
 
 %%%%% SECTION: calculateShipping
 % Put your rules for the calculateShipping predicate in this section
