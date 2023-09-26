@@ -39,8 +39,7 @@ albumArtist(A,B),albumArtist(C,D), albumLabel(A,M),albumLabel(C,P),not A=C, B=D,
 albumArtist(30,ARTISTNAME),albumArtist(A,ARTISTNAME),albumYear(A,X), albumYear(30,Y),not A=30, X<Y.
 
 %%%%%% QUERY 8: Was there a year from 2000 to 2023 (inclusive) that the record label Republic did not release an album?
-%need to work
-
+%kinda works if you put not (albumYear(_, Year), Year >= 2000, Year =< 2023, albumLabel(_, 'republic')).
 %Riddhima's answer
 albumYear(_, Year), Year >= 2000, Year =< 2023, albumLabel(_, 'republic').
 
@@ -133,8 +132,9 @@ No (0.00s cpu)
 ?- albumArtist(30, ARTISTNAME), albumArtist(A, ARTISTNAME), albumYear(A, X), albumYear(30, Y), not A = 30, X < Y.
 No (0.00s cpu)
 
-?- albumYear(_71, Year), Year >= 2000, Year =< 2023, albumLabel(_93, republic).
-No (0.00s cpu)
+?- not (albumYear(_61, Year), Year >= 2000, Year =< 2023, albumLabel(_83, republic)).
+Year = Year
+Yes (0.00s cpu)
 
 ?- albumArtist(A1, Artist), albumArtist(A2, Artist), albumArtist(A3, Artist), albumYear(A1, Year1), albumYear(A2, Year2), albumYear(A3, Year3), Year1 >= 2018, Year2 is Year1 + 1, Year3 is Year1 + 2.
 A1 = one
