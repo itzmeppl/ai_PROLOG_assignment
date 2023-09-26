@@ -24,7 +24,7 @@ cost(keyboard,10).
 
 numPurchased(laptop,5).
 numPurchased(monitor,3).
-numPurchased(keyboard,15).
+numPurchased(keyboard,1).
 
 %%%%% SECTION: shippingCost
 % Put your atomic statements for the shippingCost predicate in this section
