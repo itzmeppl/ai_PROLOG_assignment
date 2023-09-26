@@ -24,30 +24,18 @@ albumLabel(midnights,republic).
 albumArtist(renaissance,X).
 
 %%%%%% QUERY 3: Was there an artist who released albums in both 2010 and 2016, and if so, who was it?
-%both of the following work
-
 albumArtist(A,B), albumArtist(C,D), albumYear(A,2010),albumYear(C,2016),B=D,not A=C.
-albumYear(A1, 2016), albumYear(A2, 2010), albumArtist(A1, X), albumArtist(A2, X), not A1 = A2.
-
 
 %%%%%% QUERY 4: Was there an album that was released in the year 2012 that was not released by either the record label Columbia or the record label Republic?
 albumYear(A,2012), not albumLabel(A,columbia), not albumLabel(A,republic).
 
-
 %%%%%% QUERY 5: Did any artist release two different albums, each with a different record label?
 albumArtist(M,S), albumArtist(N,S), albumLabel(M,L),albumLabel(N,R), not M=N, S=S, not L=R.
 
-
 %%%%%% QUERY 6: Did any artist release more than one album with the same record label?
-
-%more than one means at least 2
-%both work
-
 albumArtist(A,B),albumArtist(C,D), albumLabel(A,M),albumLabel(C,P),not A=C, B=D,M=P.
-albumArtist(X,A), albumArtist(Y,A), albumLabel(X,S), albumLabel(Y,S), not X=Y.
 
 %%%%%% QUERY 7: Did the artist who released an album called “30” release any albums in years before that one?
-
 albumArtist(30,ARTISTNAME),albumArtist(A,ARTISTNAME),albumYear(A,X), albumYear(30,Y),not A=30, X<Y.
 
 %%%%%% QUERY 8: Was there a year from 2000 to 2023 (inclusive) that the record label Republic did not release an album?
@@ -57,21 +45,14 @@ albumArtist(30,ARTISTNAME),albumArtist(A,ARTISTNAME),albumYear(A,X), albumYear(3
 albumYear(_, Year), Year >= 2000, Year =< 2023, albumLabel(_, 'republic').
 
 %%%%%% QUERY 9: Was there an artist that released an album in 3 consecutive years starting in 2018 or later?
-
 albumArtist(A1,Artist),albumArtist(A2,Artist),albumArtist(A3,Artist),albumYear(A1,Year1),albumYear(A2,Year2),albumYear(A3,Year3),Year1>=2018, Year2 is Year1+1, Year3 is Year1+2.
 
 
-albumArtist(A,N),albumArtist(B,N),albumArtist(C,N),albumYear(A,P),albumYear(B,Q),albumYear(C,R),P>=2018, Q is P+1, R is P+2.
-
 %%%%%% QUERY 10: Did any record label release exactly one album in 2015?
-%need to work
-not (albumLabel(A,R),albumLabel(B,R), albumYear(A,2015), albumYear(B,2015), not A=B )
-
-% Wendy's answer not tested 
+%not tested
 not (albumLabel(A,R),albumLabel(B,R), albumYear(A,2015), albumYear(B,Y), Y \= 2015, not A=B), not(albumYear(C,2015)).
 
 %%%%%% QUERY 11: What was the last album released by Drake?
-%tested and seems to work 
 albumArtist(Lastalbum, drake), albumYear(Lastalbum, TargetYear), not (albumYear(Album, Year),albumArtist(Album, drake), TargetYear < Year).
 
 
@@ -94,7 +75,93 @@ No (0.00s cpu)
 A = shawn_mendes
 Yes (0.00s cpu)
 
+?- albumArtist(M, S), albumArtist(N, S), albumLabel(M, L), albumLabel(N, R), not M = N, S = S, not L = R.
+M = one
+S = singer
+N = two
+L = bic
+R = blahblah
+Yes (0.00s cpu, solution 1, maybe more)
+M = one
+S = singer
+N = three
+L = bic
+R = eewfds
+Yes (0.00s cpu, solution 2, maybe more)
+M = two
+S = singer
+N = one
+L = blahblah
+R = bic
+Yes (0.00s cpu, solution 3, maybe more)
+M = two
+S = singer
+N = three
+L = blahblah
+R = eewfds
+Yes (0.00s cpu, solution 4, maybe more)
+M = three
+S = singer
+N = one
+L = eewfds
+R = bic
+Yes (0.00s cpu, solution 5, maybe more)
+M = three
+S = singer
+N = two
+L = eewfds
+R = blahblah
+Yes (0.00s cpu, solution 6, maybe more)
+No (0.00s cpu)
 
+?- albumArtist(A, B), albumArtist(C, D), albumLabel(A, M), albumLabel(C, P), not A = C, B = D, M = P.
+A = song1
+B = drake
+C = song2
+D = drake
+M = big_machine_records
+P = big_machine_records
+Yes (0.00s cpu, solution 1, maybe more)
+A = song2
+B = drake
+C = song1
+D = drake
+M = big_machine_records
+P = big_machine_records
+Yes (0.00s cpu, solution 2, maybe more)
+No (0.00s cpu)
+
+?- albumArtist(30, ARTISTNAME), albumArtist(A, ARTISTNAME), albumYear(A, X), albumYear(30, Y), not A = 30, X < Y.
+No (0.00s cpu)
+
+?- albumYear(_71, Year), Year >= 2000, Year =< 2023, albumLabel(_93, republic).
+No (0.00s cpu)
+
+?- albumArtist(A1, Artist), albumArtist(A2, Artist), albumArtist(A3, Artist), albumYear(A1, Year1), albumYear(A2, Year2), albumYear(A3, Year3), Year1 >= 2018, Year2 is Year1 + 1, Year3 is Year1 + 2.
+A1 = one
+Artist = singer
+A2 = two
+A3 = three
+Year1 = 2020
+Year2 = 2021
+Year3 = 2022
+Yes (0.00s cpu, solution 1, maybe more)
+No (0.00s cpu)
+
+?- not (albumLabel(A, R), albumLabel(B, R), albumYear(A, 2015), albumYear(B, Y), Y \= 2015, not A = B), not albumYear(C, 2015).
+A = A
+R = R
+B = B
+Y = Y
+C = C
+Yes (0.00s cpu)
+
+?- albumArtist(Lastalbum, drake), albumYear(Lastalbum, TargetYear), not (albumYear(Album, Year), albumArtist(Album, drake), TargetYear < Year).
+Lastalbum = song2
+TargetYear = 2017
+Album = Album
+Year = Year
+Yes (0.00s cpu)
 
 
 
