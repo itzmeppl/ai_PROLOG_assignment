@@ -58,6 +58,8 @@ albumArtist(Lastalbum, drake), albumYear(Lastalbum, TargetYear), not (albumYear(
 %%%
 %%%%% INTERACTION
 
+/*
+
 ?- albumLabel(midnights, republic).
 No (0.00s cpu)
 
@@ -154,6 +156,8 @@ TargetYear = 2017
 Album = Album
 Year = Year
 Yes (0.00s cpu)
+
+*/
 
 
 
