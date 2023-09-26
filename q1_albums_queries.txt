@@ -61,7 +61,7 @@ albumArtist(30,ARTISTNAME),albumArtist(A,ARTISTNAME),albumYear(A,X), albumYear(3
 %need to work
 
 %Riddhima's answer
-albumYear(_, Year), Year >= 2000, Year =< 2023, \+ albumLabel(_, 'republic').
+albumYear(_, Year), Year >= 2000, Year =< 2023, albumLabel(_, 'republic').
 
 not (albumLabel(X, republic), albumYear(X, Y), not (Y =< 2023), not (Y >= 2000))
 
