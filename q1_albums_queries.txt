@@ -78,7 +78,8 @@ not (albumLabel(A,R),albumLabel(B,R), albumYear(A,2015), albumYear(B,2015), not 
 albumLabel(A,R),albumLabel(B,R), albumYear(A,2015), albumYear(B,Y), Y != 2015, not A=B.
 
 %%%%%% QUERY 11: What was the last album released by Drake?
-
+% Wendy's answer not tested 
+albumArtist(Lastalbum, Drake), albumYear (Lastalbum, TargetYear), not((albumYear (Lastalbum, Year), Year > TargetYear)).
 
 
 
