@@ -60,7 +60,7 @@ articleTopic(animal_farm,satire).
 %these account for the base cases where A1 and A2 is itself or has a direct connection
 collabDist(A1, A2, MaxDist) :- articleAuthor(X, A1), articleAuthor(X, A2), MaxDist >= 0.
 collabDist(A1, A2, MaxDist) :- articleAuthor(X, A1), articleAuthor(X, A2), A1 \= A2, MaxDist >= 1.
-collabDist(A1, A2, MaxDist) :- UpdatedMaxDist is  MaxDist - 1, UpdatedMaxDist >= 0, collabDist(A2, A3,  UpdatedMaxDist). 
+collabDist(A1, A2, MaxDist) :- UpdatedMaxDist is  MaxDist - 1, UpdatedMaxDist >= 0, collabDist(A1, A3,  UpdatedMaxDist),collabDist(A3, A2, UpdatedMaxDist). 
 
 
 
