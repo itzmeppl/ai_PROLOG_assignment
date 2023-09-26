@@ -38,7 +38,8 @@ collabDist(john,X,2).
 collabDistWithAI(phil,phil,4,at_least_one).
 
 %%%%%% QUERY 5
-% EXPLANATION: 
+% EXPLANATION: Check who wrote the same articles as ally.
+collabDist(ally,X,1).
 
 
 %%%%%% QUERY 6
