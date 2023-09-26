@@ -19,8 +19,8 @@
 
 
 %%%%%% QUERY 1
-% EXPLANATION: 
-
+% EXPLANATION: Checks if danny wrote at least one paper on the topic of ai.
+collabDistWithAI(danny,danny,0,at_least_one).
 
 %%%%%% QUERY 2
 % EXPLANATION: 
