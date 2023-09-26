@@ -39,12 +39,14 @@ collabDistWithAI(phil,phil,4,at_least_one).
 
 %%%%%% QUERY 5
 % EXPLANATION: Check who wrote the same articles as ally.
+
 collabDist(ally,X,1).
 
 
 %%%%%% QUERY 6
-% EXPLANATION:
+% EXPLANATION: Check who has collaborated with brian with a path of length at most 3 collaboration steps and brian and the collaboraters have not written an AI article.
 
+collabDistWithAI(brian, X, 3, none).
 
 %%%%%% QUERY 7
 % EXPLANATION: 
