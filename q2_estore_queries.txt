@@ -53,6 +53,9 @@ totalCost(express,Cost).
 %%%
 %%%
 %%%%% INTERACTION
+
+/*
+
 ?- subtotal(X).
 X = 3510
 Yes (0.00s cpu)
@@ -78,5 +81,5 @@ Cost = 4915.4999999999991
 Yes (0.00s cpu)
 
 
-
+*/
 
