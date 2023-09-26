@@ -49,8 +49,7 @@ albumArtist(A1,Artist),albumArtist(A2,Artist),albumArtist(A3,Artist),albumYear(A
 
 
 %%%%%% QUERY 10: Did any record label release exactly one album in 2015?
-%not tested
-not (albumLabel(A,R),albumLabel(B,R), albumYear(A,2015), albumYear(B,Y), Y \= 2015, not A=B), not(albumYear(C,2015)).
+(albumLabel(A,R),albumLabel(B,R), albumYear(A,2015), albumYear(B,Y), Y \= 2015, not A=B), not(albumYear(C,2015)).
 
 %%%%%% QUERY 11: What was the last album released by Drake?
 albumArtist(Lastalbum, drake), albumYear(Lastalbum, TargetYear), not (albumYear(Album, Year),albumArtist(Album, drake), TargetYear < Year).
@@ -148,13 +147,8 @@ Year3 = 2022
 Yes (0.00s cpu, solution 1, maybe more)
 No (0.00s cpu)
 
-?- not (albumLabel(A, R), albumLabel(B, R), albumYear(A, 2015), albumYear(B, Y), Y \= 2015, not A = B), not albumYear(C, 2015).
-A = A
-R = R
-B = B
-Y = Y
-C = C
-Yes (0.00s cpu)
+?- (albumLabel(A, R), albumLabel(B, R), albumYear(A, 2015), albumYear(B, Y), Y \= 2015, not A = B), not albumYear(C, 2015).
+No (0.00s cpu)
 
 ?- albumArtist(Lastalbum, drake), albumYear(Lastalbum, TargetYear), not (albumYear(Album, Year), albumArtist(Album, drake), TargetYear < Year).
 Lastalbum = song2
