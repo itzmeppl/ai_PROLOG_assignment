@@ -78,5 +78,5 @@ calculateShipping(ShippingType,ShippingCost) :- ShippingType = regular, subtotal
 %%%%% SECTION: totalCost
 % Put your rules for the totalCost predicate in this section
 
-totalCost(ShippingType,Cost) :- subtotal(Sub), calculateShipping(ShippingType,ShippingCost), SubwithShip is Sub + ShippingCost,taxRate(taxpercent),Taxcal is taxpercent+ 1, Cost is SubwithShip * Taxcal.
+totalCost(ShippingType,Cost) :- subtotal(Sub), calculateShipping(ShippingType,ShippingCost), SubwithShip is Sub + ShippingCost,taxRate(Taxpercent),Taxcal is Taxpercent+ 1, Cost is SubwithShip * Taxcal.
 
