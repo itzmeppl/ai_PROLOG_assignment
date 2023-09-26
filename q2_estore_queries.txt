@@ -33,7 +33,8 @@ calculateShipping(regular,ShippingCost).
 
 
 %%%%%% QUERY 4
-% EXPLANATION: 
+totalCost(express,Cost).
+% EXPLANATION: calculates the total cost of the products including express shipping and taxes
 
 %%%%%% QUERY 5
 % EXPLANATION: 
