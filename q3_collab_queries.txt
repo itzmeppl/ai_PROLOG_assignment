@@ -49,7 +49,7 @@ collabDist(ally,X,1).
 collabDistWithAI(brian, X, 3, none).
 
 %%%%%% QUERY 7
-% EXPLANATION: 
+% EXPLANATION: check distance when john_locke would hit path with eric_carle. This would return as no because based on our current KB, both authors have no articles in common.
 
 collabDist(john_locke, eric_carle, X).
 
