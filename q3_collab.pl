@@ -70,5 +70,5 @@ collabDist(A1, A2, MaxDist) :- UpdatedMaxDist is  MaxDist - 1, UpdatedMaxDist >=
 
 %%%% SECTION: collabDistWithAI
 % Put your rules for collabDistWithAI in this section
-
+collabDistWithAI (A1,A2,MaxDist,AI),:- articleAuthor(X, A1), articleAuthor(X, A2), AI = none, articleTopic(X,Y), Y /= ai.
 
