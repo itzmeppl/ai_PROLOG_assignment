@@ -21,6 +21,7 @@ articleAuthor(communist_manifesto,cormac_mccarthy).
 articleAuthor(very_hungry_catipillar,eric_carle).
 articleAuthor(jane_eyre,charlotte_bronte).
 articleAuthor(villette,charlotte_bronte).
+articleAuthor(villette, eric_carle).
 articleAuthor(the_road,cormac_mccarthy).
 articleAuthor(matilda,george_orwell).
 articleAuthor(matilda,roald_dahl).
