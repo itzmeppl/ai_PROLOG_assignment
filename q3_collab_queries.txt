@@ -60,7 +60,7 @@ collabDistWithAI(roald_dahl,cormac_mccarthy,3,none).
 
 %%%%%% QUERY 9
 % EXPLANATION:  Checks if there is a path of length at most 5 collaboration steps between jean_jacques_rousseau and martin_luther.
-collabDist(jean_jacques_rousseau,martin_luther,2).
+collabDist(jean_jacques_rousseau,martin_luther,5).
 
 
 %%%%%% QUERY 10
