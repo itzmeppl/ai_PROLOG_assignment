@@ -29,6 +29,7 @@ articleAuthor(the_bfg,roald_dahl).
 articleAuthor(two_treatises_of_government,john_locke).
 articleAuthor(ninety_five_theses,martin_luther).
 articleAuthor(ninety_five_theses,karl_marx).
+articleAuthor(ninety_five_theses,eric_carle).
 articleAuthor(the_social_contract,jean_jacques_rousseau).
 articleAuthor(discourse_on_inequality,jean_jacques_rousseau).
 articleAuthor(holes,louis_sachar).
