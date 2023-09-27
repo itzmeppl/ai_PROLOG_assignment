@@ -51,6 +51,7 @@ collabDistWithAI(brian, X, 3, none).
 %%%%%% QUERY 7
 % EXPLANATION: 
 
+collabDist(john_locke, eric_carle, X).
 
 %%%%%% QUERY 8
 % EXPLANATION: 
