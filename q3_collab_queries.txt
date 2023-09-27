@@ -64,7 +64,8 @@ collabDist(jean_jacques_rousseau,martin_luther,5).
 
 
 %%%%%% QUERY 10
-% EXPLANATION: 
+% EXPLANATION: check if john_locke and eric_carle are connected. there are 2 ways to get to eric_carle, this tests if the program takes the shortest path
+collabDist(john_locke, eric_carle, 3).
 
 
 % If you want to add more queries, put them above and use the same formatting as given above.
