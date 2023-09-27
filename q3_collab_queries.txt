@@ -54,11 +54,13 @@ collabDistWithAI(brian, X, 3, none).
 collabDist(john_locke, eric_carle, X).
 
 %%%%%% QUERY 8
-% EXPLANATION: 
+% EXPLANATION: Check if roald_dahl and cormac_mccarthy have collabrated  with a path of length at most 3 collaboration steps have written at no AI article between them.
+collabDistWithAI(roald_dahl,cormac_mccarthy,3,none).
 
 
 %%%%%% QUERY 9
-% EXPLANATION: 
+% EXPLANATION:  Checks if there is a path of length at most 5 collaboration steps between jean_jacques_rousseau and martin_luther.
+collabDist(jean_jacques_rousseau,martin_luther,2).
 
 
 %%%%%% QUERY 10
